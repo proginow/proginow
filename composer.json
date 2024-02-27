@@ -1,0 +1,53 @@
+{
+    "name": "proginow/proginow",
+    "type": "project",
+    "description": "The Proginow Framework.",
+    "keywords": ["framework", "proginow"],
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Proginow",
+          "email": "info@proginow.com",
+          "homepage": "https://proginow.com",
+          "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\":"app"
+        },
+        "files": ["bootstrap/helper.php"]
+    },
+    "require": {
+        "proginow/auth": "*",
+        "proginow/base64": "*",
+        "proginow/cookie": "*",
+        "proginow/database": "*",
+        "proginow/http": "*",
+        "proginow/id": "*",
+        "proginow/router": "*",
+        "proginow/string": "*",
+        "proginow/template": "*",
+        "proginow/upload": "*",
+        "vlucas/phpdotenv": "*",
+        "phpmailer/phpmailer": "*",
+        "splitbrain/php-cli": "*"
+    },
+    "require-dev": {
+        "filp/whoops": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/proginow/proginow"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "support": {
+        "email": "info@proginow.com"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
